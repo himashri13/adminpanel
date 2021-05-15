@@ -1,1 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="style.css">
 
+
+
+</head>
+<body>
+<header role="banner">
+  <h1>Admin Panel</h1>
+  <ul class="utilities">
+    <br>
+    <li class="users"><a href="#">My Account</a></li>
+    <li class="logout warn"><a href="">Log Out</a></li>
+  </ul>
+</header>
+
+<nav role='navigation'>
+  <ul class="main">
+    <li class="dashboard"><a href="admindashboard">Dashboard</a></li>
+    <li class="users"><a href="#">Manage Users</a></li>
+  </ul>
+</nav>
+
+<main role="main">
+
+  <section class="panel important">
+    <h2>Form</h2>
+    <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
+      <div class="twothirds">
+        Name<br />
+        <input type="text" name="title" size="40" /><br /><br />
+        Address<br />
+        <textarea name="newstext" rows="6" cols="67"></textarea><br />
+        Mobile Number<br />
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+
+        <br  />
+         <button ="submit">Save</button>
+
+        
+        <button onclick="window.print()">Print</button>
+
+      </div>
+     
+    
+
+    </form>
+  </section>
+
+</main>
+</body>
+</html>
